@@ -38,6 +38,10 @@ nav {
   justify-content: space-between;
 }
 
+h1 i {
+  margin-left: 0.5rem;
+}
+
 /* (Hamburger) Menu */
 .menu {
   list-style: none;
