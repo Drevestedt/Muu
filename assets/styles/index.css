@@ -31,7 +31,7 @@ body::before {
 
 /* Navbar */
 nav {
-  background-color: rgba(219, 184, 139, 0.9);
+  background-color: rgb(219, 184, 139);
   font-family: Playfair Display, sans-serif;
   padding: 1rem;
   display: flex;
@@ -85,7 +85,7 @@ h1 i {
 /* Eating Menu Section */
 #menu-section {
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #645a55;
   margin: 2rem 1rem;
   border-radius: 8px;
 }
@@ -93,7 +93,7 @@ h1 i {
 #menu-section h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  background-color: #fff;
+  background-color: rgb(222, 191, 151);
   padding: 1rem;
   margin: 1rem;
   border-radius: 8px;
@@ -106,7 +106,7 @@ h1 i {
 }
 
 .menu-item {
-  background-color: #fff;
+  background-color: rgb(221, 183, 133);
   padding: 1rem;
   margin: 1rem;
   border-radius: 8px;
@@ -131,7 +131,7 @@ h1 i {
 /* Booking Section */
 #booking-section {
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #645a55;
   margin: 1rem 1rem 2rem 1rem;
   border-radius: 8px;
 }
@@ -139,7 +139,7 @@ h1 i {
 #booking-section h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  background-color: #fff;
+  background-color: rgb(222, 191, 151);
   padding: 1rem;
   border-radius: 8px;
 }
@@ -154,10 +154,12 @@ h1 i {
 
 #booking-section label {
   font-weight: bold;
+  color: rgb(228, 222, 213);
 }
 
 #booking-section input {
   margin-top: 0;
+  background-color: rgb(222, 191, 151);
 }
 
 #booking-section input,
@@ -169,13 +171,15 @@ h1 i {
 
 #booking-section button {
   background-color: #333;
-  color: #fff;
+  color: rgb(228, 222, 213);
   cursor: pointer;
   border: none;
 }
 
 /* Responsive styles */
+/* 992px */
 @media screen and (min-width: 992px) {
+  /* Navbar */
   nav {
     display: flex;
     align-items: baseline;
@@ -205,5 +209,27 @@ h1 i {
 
   .menu-icon {
     display: none;
+  }
+
+  /* Main */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  /* Eating Menu Section */
+  #menu-section {
+    max-width: 500px;
+  }
+
+  /* Booking Section */
+  #booking-section {
+    min-width: 400px;
+    margin-top: 10rem;
+  }
+
+  #booking-section button {
+    font-size: medium;
   }
 }
