@@ -13,5 +13,5 @@ def book_table(request):
     form = Booking()
   return render(request, 'booking/book_table.html', {'form': form})
 
-#def booking(request):
-  #return HttpResponse("Booking Page")
+def booking(request):
+  return HttpResponse("Booking Page")
