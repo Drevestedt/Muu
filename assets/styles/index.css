@@ -53,7 +53,7 @@ h1 i {
   top: 4.3rem;
   left: 25%;
   width: 50%;
-  background-color: rgba(219, 184, 139, 0.9);
+  background-color: rgb(219, 184, 139);
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
@@ -82,7 +82,6 @@ h1 i {
   text-decoration: none;
 }
 
-/* Main */
 /* Eating Menu Section */
 #menu-section {
   padding: 1rem;
@@ -177,6 +176,41 @@ h1 i {
   border: none;
 }
 
+/* Contact section */
+#contact {
+  padding: 2rem;
+  background-color: #645a55;
+  margin: 1rem 1rem 2rem 1rem;
+  border-radius: 8px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background-color: rgb(222, 191, 151);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#contact p {
+  background-color: rgb(221, 183, 133);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 30%;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(219, 184, 139);
+  padding: 1rem;
+  font-family: Playfair Display, sans-serif;
+  text-align: center;
+}
+
 /* Responsive styles */
 /* 992px */
 @media screen and (min-width: 992px) {
@@ -256,6 +290,13 @@ h1 i {
   /* Eating Menu Section */
   #menu-section {
     max-width: 500px;
+  }
+
+  /* Contact section */
+  #contact {
+    max-width: 400px;
+    min-width: 400px;
+    margin-right: 480px;
   }
 
   /* Booking Section */
