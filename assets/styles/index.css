@@ -43,7 +43,7 @@ h1 i {
   margin-left: 0.5rem;
 }
 
-/* Navbar (Hamburger) Menu */
+/* Hamburger Menu */
 .menu {
   list-style: none;
   display: none;
@@ -82,6 +82,7 @@ h1 i {
   text-decoration: none;
 }
 
+/* Main */
 /* Eating Menu Section */
 #menu-section {
   padding: 1rem;
@@ -211,6 +212,40 @@ h1 i {
     display: none;
   }
 
+  /* Navbar items */
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+  /* Menu item underline pseudo element */
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* Menu item hover */
+  .menu li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: black;
+  }
+
+  /* Menu item active page */
+  .menu li a.active::after {
+    width: 100%;
+    left: 0;
+    background: black;
+  }
+
   /* Main */
   main {
     display: flex;
@@ -226,7 +261,7 @@ h1 i {
   /* Booking Section */
   #booking-section {
     min-width: 400px;
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
 
   #booking-section button {
