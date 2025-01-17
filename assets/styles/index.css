@@ -9,11 +9,14 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Playfair Display, sans-serif;
   background-image: url("../img/landing_page.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -32,7 +35,6 @@ body::before {
 /* Navbar */
 nav {
   background-color: rgb(219, 184, 139);
-  font-family: Playfair Display, sans-serif;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -80,6 +82,11 @@ h1 i {
 .menu a {
   color: black;
   text-decoration: none;
+}
+
+/* Main */
+main {
+  flex: 1 0 auto;
 }
 
 /* Eating Menu Section */
@@ -177,14 +184,14 @@ h1 i {
 }
 
 /* Contact section */
-#contact {
+#contact-section {
   padding: 2rem;
   background-color: #645a55;
   margin: 1rem 1rem 2rem 1rem;
   border-radius: 8px;
 }
 
-#contact h2 {
+#contact-section h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   background-color: rgb(222, 191, 151);
@@ -192,7 +199,7 @@ h1 i {
   border-radius: 8px;
 }
 
-#contact p {
+#contact-section p {
   background-color: rgb(221, 183, 133);
   padding: 1rem;
   margin: 1rem;
@@ -287,25 +294,29 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
   }
+
   /* Eating Menu Section */
   #menu-section {
     max-width: 500px;
-  }
-
-  /* Contact section */
-  #contact {
-    max-width: 400px;
-    min-width: 400px;
-    margin-right: 480px;
+    margin-bottom: 0;
   }
 
   /* Booking Section */
   #booking-section {
     min-width: 400px;
     margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   #booking-section button {
     font-size: medium;
+  }
+
+  /* Contact section */
+  #contact-section {
+    max-width: 400px;
+    min-width: 400px;
+    margin-right: 50%;
+    margin-top: 0;
   }
 }
