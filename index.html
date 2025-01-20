@@ -61,7 +61,8 @@
       <!-- Booking Section -->
       <section id="booking-section">
         <h2>Book a Table</h2>
-        <form>
+        <form method="post" action="{% url 'book_table' %}">
+          {% csrf_token %}
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
