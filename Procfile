@@ -1,1 +1,1 @@
-web: gunicorn my_project.wsgi
+web: gunicorn meat_hook.wsgi
