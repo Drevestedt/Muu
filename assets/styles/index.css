@@ -55,11 +55,12 @@ h1 i {
   top: 4.3rem;
   left: 25%;
   width: 50%;
-  background-color: rgb(219, 184, 139);
+  background-color: #5e4b40;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
   padding: 1rem 0rem 1rem 0;
+  border-radius: 8px;
 }
 
 .menu.active {
@@ -80,12 +81,11 @@ h1 i {
 }
 
 .menu a {
-  color: black;
+  color: rgb(228, 222, 213);
   text-decoration: none;
 }
 
 /* Main */
-
 /* Eating Menu Section */
 #menu-section {
   padding: 1rem;
@@ -215,7 +215,18 @@ footer {
 }
 
 /* Responsive styles */
-/* 992px */
+@media screen and (min-width: 768px) {
+  /* Main */
+  #main-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu-section {
+    max-width: 600px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   /* Navbar */
   nav {
