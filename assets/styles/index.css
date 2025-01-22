@@ -284,10 +284,15 @@ footer {
   }
 
   /* Main */
-  main {
+  #main-wrapper {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 613px;
   }
 
   /* Eating Menu section */
@@ -306,5 +311,13 @@ footer {
   #contact-section {
     min-width: 400px;
     max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 720px;
   }
 }
