@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from booking.views import LandingPageView 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("booking.urls")),
+    path('', LandingPageView.as_view(), name='index'),
+    path('booking/', include("booking.urls")),
 ]   
