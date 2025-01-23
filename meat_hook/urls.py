@@ -22,4 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', LandingPageView.as_view(), name='index'),
     path('booking/', include("booking.urls")),
-]   
+]  # + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
