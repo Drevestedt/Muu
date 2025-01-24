@@ -85,6 +85,43 @@ h1 i {
   text-decoration: none;
 }
 
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#confirmation-section {
+  background-color: #645a55;
+  padding: 1rem;
+  text-align: center;
+  max-width: 350px;
+  border-radius: 8px;
+}
+
+#confirmation-section h2 {
+  background-color: rgb(222, 191, 151);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+#confirmation-section .para-text {
+  background-color: rgb(221, 183, 133);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#confirmation-section p {
+  font-weight: bold;
+  margin: 1rem;
+}
+
 /* Footer */
 footer {
   background-color: rgb(219, 184, 139);
@@ -92,3 +129,5 @@ footer {
   font-family: Playfair Display, sans-serif;
   text-align: center;
 }
+
+/* Responsive styles */
