@@ -20,9 +20,9 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Static files (CSS, JS, Images)
-STATIC_URL = '/assets/' 
+STATIC_URL = '/static/' 
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, 'assets'),
+  os.path.join(BASE_DIR, 'static'),
 ]
 
 # Quick-start development settings - unsuitable for production
