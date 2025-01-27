@@ -20,5 +20,5 @@ def book_table(request):
         form = BookingForm()
     return render(request, 'index.html', {'form': form})
 
-def booking_confirmation(response):
-    return render(response, "booking/booking_conf.html", {})
+def booking_confirmation(request):
+    return render(request, "booking/booking_conf.html", {})

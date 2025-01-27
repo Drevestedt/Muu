@@ -32,7 +32,7 @@ STATICFILES_DIRS = [
 SECRET_KEY = 'django-insecure-9+klij-1$n#v6mk_)(6hyd-a(n1s6oc1+-!x=!81o$bc+c)5c#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = False  
 
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
