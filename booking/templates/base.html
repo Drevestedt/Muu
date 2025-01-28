@@ -2,11 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meat Hook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-      <p>Test base.html</p>
-    </body>
+    <!-- Favicon -->
+    <link rel="icon" href="./static/img/favicon.webp">
+
+     <!-- Styles -->
+     <link rel="stylesheet" href="./static/styles/base.css">
+
+    <title>Meat Hook</title>
   </head>
+    <body>
+
+      <!-- Navbar -->
+    <header id="navbar">
+      <nav>
+        <h1 href="index.html">
+          Meat Hook <i class="fa-solid fa-utensils"></i>
+        </h1>
+
+        <!-- Hamburger Menu -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Menu items -->
+        <ul class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+     <main>
+      
+     </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="copyright">&copy; 2025 around:: Development</p>
+    </footer>
+
+    <!-- Font Awesome link -->
+    <script
+      src="https://kit.fontawesome.com/b39e6ae36f.js"
+      crossorigin="anonymous">
+    </script>
+
+    <!-- Custom scripts -->
+    <script src="/static/scripts/base.js"></script>
+    </body>
 </html>
