@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link rel="icon" href="./static/img/favicon.webp">
+    <link rel="icon" href="./static/img/favicon.webp" />
 
-     <!-- Styles -->
-     <link rel="stylesheet" href="./static/styles/base.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./static/styles/base.css" />
 
     <title>Meat Hook</title>
-  </head>
-    <body>
 
-      <!-- Navbar -->
+    {% block head %} {% endblock %}
+  </head>
+  <body>
+    <!-- Navbar -->
     <header id="navbar">
       <nav>
         <h1 href="index.html">
@@ -35,9 +36,9 @@
     </header>
 
     <!-- Main -->
-     <main>
-      
-     </main>
+    <main>
+      <div>{% block content %} {% endblock %}</div>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -47,10 +48,10 @@
     <!-- Font Awesome link -->
     <script
       src="https://kit.fontawesome.com/b39e6ae36f.js"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom scripts -->
     <script src="/static/scripts/base.js"></script>
-    </body>
+  </body>
 </html>
