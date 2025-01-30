@@ -8,70 +8,81 @@
 {% endblock %}
 <!-- Main -->
 {% block content %}
-<main>
-  <div id="main-wrapper">
-    <main>
-      <!-- Menu Section -->
-      <div id="eating-menu">
-        <section id="menu-section">
-          <h2>Our Menu</h2>
-          <div class="menu-items">
-            <div class="menu-item">
-              <h3>Steak</h3>
-              <p>Juicy grilled steak with a side of vegetables.</p>
-              <p>Choose between 150g and 250g</p>
-              <span>$25 - $35</span>
-            </div>
-            <div class="menu-item">
-              <h3>Burger</h3>
-              <p>Delicious beef burger with cheese and lettuce.</p>
-              <p>Choose between 150g, 200g, or 250g</p>
-              <span>$15, $20, $25</span>
-            </div>
-            <div class="menu-item">
-              <h3>Salad</h3>
-              <p>Fresh garden salad with a variety of vegetables.</p>
-              <span>$10</span>
-            </div>
+<div id="main-wrapper">
+  <main>
+    <!-- Menu Section -->
+    <div id="eating-menu">
+      <section id="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h3>Steak</h3>
+            <p>Juicy grilled steak with a side of vegetables.</p>
+            <p>Choose between 150g and 250g</p>
+            <span>$25 - $35</span>
           </div>
-        </section>
-      </div>
+          <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Delicious beef burger with cheese and lettuce.</p>
+            <p>Choose between 150g, 200g, or 250g</p>
+            <span>$15, $20, $25</span>
+          </div>
+          <div class="menu-item">
+            <h3>Salad</h3>
+            <p>Fresh garden salad with a variety of vegetables.</p>
+            <span>$10</span>
+          </div>
+        </div>
+      </section>
+    </div>
 
-      <!-- Booking section -->
-      <div id="bookings">
-        <section id="booking-section">
-          <h2>Book a Table</h2>
-          <form method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+    <!-- Booking section -->
+    <div id="bookings">
+      <section id="booking-section">
+        <h2>Book a Table</h2>
+        <form method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
 
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required />
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
 
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required />
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
 
-            <label for="guests">Number of Guests:</label>
-            <input
-              type="number"
-              id="guests"
-              name="guests"
-              min="1"
-              max="10"
-              required
-            />
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+          />
 
-            <button type="submit">Book Now</button>
-          </form>
-        </section>
-      </div>
-    </main>
-  </div>
-</main>
-{% endblock %}
+          <button type="submit">Book Now</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contacts">
+      <section id="contact-section">
+        <h2>Contact us:</h2>
+        <p>Phone: <a href="123 45678">123 45678</a></p>
+        <p>
+          Email:
+          <a href="the.meat.hook@email.com">the.meat.hook@email.com</a>
+        </p>
+        <p>Address: Fictive Street 5, Miami, FL 55555</p>
+      </section>
+    </div>
+  </main>
+  {% endblock %}
+</div>

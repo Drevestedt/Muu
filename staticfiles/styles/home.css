@@ -90,3 +90,51 @@
   cursor: pointer;
   border: none;
 }
+
+/* Contact section */
+#contact-section {
+  padding: 2rem;
+  background-color: #645a55;
+  margin: 2rem 1rem 2rem 1rem;
+  border-radius: 8px;
+}
+
+#contact-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background-color: rgb(222, 191, 151);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#contact-section p {
+  background-color: rgb(221, 183, 133);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 30%;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  /* Main */
+  #main-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu-section {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Main */
+  #main-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

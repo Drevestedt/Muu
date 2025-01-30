@@ -117,24 +117,3 @@
   flex: 1 1 30%;
   font-weight: bold;
 }
-
-/* Responsive styles */
-@media screen and (min-width: 768px) {
-  /* Main */
-  #main-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  #menu-section {
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  /* Main */
-  #main-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-}

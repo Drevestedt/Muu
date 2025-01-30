@@ -127,14 +127,6 @@
   }
 
   #menu-section {
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  /* Main */
-  #main-wrapper {
-    display: flex;
-    justify-content: center;
+    max-width: 300px;
   }
 }

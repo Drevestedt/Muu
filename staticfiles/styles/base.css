@@ -85,11 +85,6 @@ h1 i {
   text-decoration: none;
 }
 
-/* Main */
-main {
-  flex: 1;
-}
-
 /* Footer */
 footer {
   background-color: rgb(219, 184, 139);

@@ -131,10 +131,40 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  /* Main */
-  #main-wrapper {
-    display: flex;
-    justify-content: center;
+/* Main */
+#main-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 613px;
+}
+
+/* Eating Menu section */
+#menu-section {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+/* Booking section */
+#booking-section {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+/* Contact section */
+#contact-section {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 720px;
   }
 }
