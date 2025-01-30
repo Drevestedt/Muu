@@ -36,6 +36,41 @@
           </div>
         </section>
       </div>
+
+      <!-- Booking section -->
+      <div id="bookings">
+        <section id="booking-section">
+          <h2>Book a Table</h2>
+          <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="guests">Number of Guests:</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              max="10"
+              required
+            />
+
+            <button type="submit">Book Now</button>
+          </form>
+        </section>
+      </div>
     </main>
   </div>
 </main>
