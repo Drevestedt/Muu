@@ -2,4 +2,22 @@
 <!-- Inherit from base.html -->
 {% extends 'base.html' %}
 
+<!-- Styles -->
+{% block head %} {% load static %}
+<link rel="stylesheet" href="{% static '/styles/booking-conf.css' %}" />
+{% endblock %}
 <title>{% block title %} Booking Confirmation {% endblock %}</title>
+
+<!-- Main -->
+{% block content %}
+<main>
+  <section id="confirmation-section">
+    <h2>Booking Confirmation</h2>
+    <div class="para-text">
+      <p>Thank you for your booking!</p>
+      <p>Your table has been successfully reserved.</p>
+      <p>We look forward to serving you!</p>
+    </div>
+  </section>
+</main>
+{% endblock %}
