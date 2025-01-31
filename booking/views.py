@@ -18,3 +18,6 @@ def home(response):
   else:
     form = BookingForm()
   return render(response, "home.html", {"form":form})
+
+def booking_confirmation(response):
+  return render(response, "booking-conf.html", {})
