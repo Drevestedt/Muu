@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Playfair Display, sans-serif;
-  background-image: url("../img/landing_page.jpeg");
+  background-image: url("../img/landing_page.768499666c4b.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -83,6 +83,10 @@ h1 i {
 .menu a {
   color: rgb(228, 222, 213);
   text-decoration: none;
+}
+
+main {
+  flex: 1;
 }
 
 /* Footer */
