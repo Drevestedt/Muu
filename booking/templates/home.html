@@ -36,6 +36,30 @@
         </div>
       </section>
     </div>
+
+    <!-- Booking section -->
+    <div id="bookings">
+      <section id="booking-section">
+        <h2>Book a Table</h2>
+        <form method="POST" action="{% url 'home' %}">
+          {% csrf_token %} {{form}}
+          <button type="submit">Book Now</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contacts">
+      <section id="contact-section">
+        <h2>Contact us:</h2>
+        <p>Phone: <a href="123 45678">123 45678</a></p>
+        <p>
+          Email:
+          <a href="the.meat.hook@email.com">the.meat.hook@email.com</a>
+        </p>
+        <p>Address: Fictive Street 5, Miami, FL 55555</p>
+      </section>
+    </div>
   </main>
 </div>
 {% endblock %}
