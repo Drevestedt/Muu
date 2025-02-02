@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Playfair Display, sans-serif;
-  background-image: url("../img/landing_page.jpeg");
+  background-image: url("../img/landing_page.768499666c4b.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -133,32 +133,5 @@ footer {
     color: black;
     padding: 0.5rem 1rem;
     position: relative;
-  }
-
-  /* Menu item underline pseudo element */
-  .menu li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: black;
-    transition: width 0.3s ease, background-color 0.3s ease;
-  }
-
-  /* Menu item hover */
-  .menu li a:hover::after {
-    width: 100%;
-    left: 0;
-    background: black;
-  }
-
-  /* Menu item active page */
-  .menu li a.active::after {
-    width: 100%;
-    left: 0;
-    background: black;
   }
 }
