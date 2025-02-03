@@ -1,13 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import BookingForm
 
 # Create your views here.
 def base(response):
   return render(response, "base.html", {})
 
-def home(response):
-  if response == "POST":
-    form = BookingForm(response.POST)
+def home(request):
+  if request == "POST":
+    form = BookingForm(request.POST)
     if form.is_valid():
       name = form.cleaned_data["name"]
       email = form.cleaned_data["email"]
@@ -15,9 +15,12 @@ def home(response):
       date = form.cleaned_data["date"]
       time = form.cleaned_data["time"]
       party_size = form.cleaned_data["party_size"]
+
+      form.save()
+      return redirect("booking_confirmation")
   else:
     form = BookingForm()
-  return render(response, "home.html", {"form":form})
+  return render(request, "home.html", {"form":form})
 
 def booking_confirmation(response):
   return render(response, "booking-conf.html", {})
