@@ -162,3 +162,11 @@
     max-width: 400px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 720px;
+  }
+}
