@@ -9,7 +9,8 @@ def home(request):
   if request.method == "POST":
     form = BookingForm(request.POST)
     if form.is_valid():
-      form.save()
+      booking = form.save()
+      request.session["booking_id"] = booking.id
       return redirect("booking_confirmation")
     else:
       print("Form is invalid")
@@ -19,4 +20,5 @@ def home(request):
     return render(request, "home.html", {"form":form})
 
 def booking_confirmation(request):
-  return render(request, "booking-conf.html", {})
+  booking_id = request.session.get("booking_id")
+  return render(request, "booking-conf.html", {"booking_id":booking_id})
