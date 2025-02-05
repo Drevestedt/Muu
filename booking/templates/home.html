@@ -43,7 +43,7 @@
         <h2>Book a Table</h2>
         <form method="POST" action="{% url 'home' %}">
           {% csrf_token %} {{form}}
-          <button type="submit">Book Now</button>
+          <button type="submit" , name="book">Book Now</button>
         </form>
       </section>
     </div>

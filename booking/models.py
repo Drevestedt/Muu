@@ -11,3 +11,4 @@ class Bookings(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.email} - {self.phone} - {self.date} - {self.time} - {self.party_size}"
+    
