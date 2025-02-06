@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Bookings
 from .forms import BookingForm
 
@@ -22,6 +22,22 @@ def home(request):
 
 def booking_confirmation(request):
   booking_id = request.session.get("booking_id")
-  if booking_id:
-    booking = Bookings.objects.get(id=booking_id)
+  print("This is the booking id:", booking_id)
+  if not booking_id:
+        return redirect("home")
+  
+  booking = Bookings.objects.get(id=booking_id)
   return render(request, "booking-conf.html", {"booking":booking})
+
+def edit_booking(request, booking_id):
+  booking = get_object_or_404(Bookings, id=booking_id)
+  if request.method == 'POST':
+    form = BookingForm(request.POST, instance=booking)
+    if form.is_valid():
+      booking = form.save()
+      request.session["booking_id"] = booking.id
+      return redirect('booking_confirmation')
+  else:
+    form = BookingForm(instance=booking)
+  return render(request, "edit-booking.html", {"form":form, "booking":booking})
+  
