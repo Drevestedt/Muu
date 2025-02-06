@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from .models import Bookings
 from .forms import BookingForm
 
 # Create your views here.
@@ -21,4 +22,6 @@ def home(request):
 
 def booking_confirmation(request):
   booking_id = request.session.get("booking_id")
-  return render(request, "booking-conf.html", {"booking_id":booking_id})
+  if booking_id:
+    booking = Bookings.objects.get(id=booking_id)
+  return render(request, "booking-conf.html", {"booking":booking})
