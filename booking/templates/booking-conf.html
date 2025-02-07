@@ -24,7 +24,7 @@
       <p>Party Size: {{booking.party_size}}</p>
       <p>We look forward to serve you!</p>
     </div>
-    <button>Edit Booking</button>
+    <a href="{% url 'edit_booking' booking.id %}">Edit Booking</a>
   </section>
 </main>
 {% endblock %}
