@@ -7,6 +7,7 @@ main {
   margin-top: 3rem;
 }
 
+/* Booking confirmation section */
 #confirmation-section {
   background-color: #645a55;
   padding: 1rem;
@@ -22,6 +23,20 @@ main {
   border-radius: 8px;
 }
 
+#confirmation-section h3 {
+  background-color: rgb(222, 191, 151);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+#confirmation-section h4 {
+  background-color: rgb(222, 191, 151);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
 #confirmation-section .para-text {
   background-color: rgb(221, 183, 133);
   padding: 1rem;
@@ -31,6 +46,12 @@ main {
 }
 
 #confirmation-section p {
-  font-weight: bold;
   margin: 1rem;
+}
+
+#confirmation-section button {
+  background-color: #333;
+  color: rgb(228, 222, 213);
+  cursor: pointer;
+  border: none;
 }

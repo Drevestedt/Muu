@@ -16,11 +16,10 @@
   <div id="edit-bookings">
     <section id="edit-booking-section">
       <h2>Edit booking</h2>
-      <form method="POST" action="{% url 'edit_booking' booking_id %}">
+      <form method="POST" action="{% url 'edit_booking' booking.id %}">
         {% csrf_token %} {{form}}
         <button type="submit" , name="book">Update booking</button>
       </form>
-      <p>Booking ID: {{booking_id}}</p>
     </section>
   </div>
 </main>
