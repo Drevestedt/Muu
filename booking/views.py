@@ -41,3 +41,13 @@ def edit_booking(request, booking_id):
     form = BookingForm(instance=booking)
   return render(request, "edit-booking.html", {"form":form, "booking":booking})
   
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Bookings, id=booking_id)
+    if request.method == "POST":
+        booking.delete()
+        return redirect("delete_confirmation")
+    else:
+       return render(request, "booking-conf.html", {"booking":booking})
+  
+def delete_confirmation(request):
+    return render(request, "delete-conf.html", {})

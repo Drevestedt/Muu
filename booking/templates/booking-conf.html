@@ -14,8 +14,8 @@
   <section id="confirmation-section">
     <h2>Booking Confirmation</h2>
     <h3>Thank you for your booking!</h3>
-    <h4>Please review below booking details:</h4>
     <div class="para-text">
+      <h4>Please review below booking details:</h4>
       <p>Name: {{booking.name}}</p>
       <p>Email: {{booking.email}}</p>
       <p>Phone: {{booking.phone}}</p>
@@ -25,6 +25,7 @@
       <p>We look forward to serve you!</p>
     </div>
     <a href="{% url 'edit_booking' booking.id %}">Edit Booking</a>
+    <form method="POST" action="{% url 'delete_booking' booking.id %}"></form>
   </section>
 </main>
 {% endblock %}

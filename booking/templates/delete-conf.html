@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- Inherit from base.html -->
+{% extends 'base.html' %}
+
+<!-- Styles -->
+{% block head %} {% load static %}
+<link rel="stylesheet" href="{% static 'styles/delete_conf.css' %}" />
+{% endblock %}
+
+<title>{% block title %} Booking Deletion Confirmation {% endblock %}</title>
+
+<!-- Main -->
+{% block main %}
+<main>
+  <section>
+    <h3>Your booking has been successfully deleted!</h3>
+  </section>
+</main>
+{% endblock %}
