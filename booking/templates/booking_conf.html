@@ -12,10 +12,9 @@
 {% block main %}
 <main>
   <section id="confirmation-section">
-    <h2>Booking Confirmation</h2>
-    <h3>Thank you for your booking!</h3>
+    <h2>Thank you for your booking!</h2>
     <div class="para-text">
-      <h4>Please review below booking details:</h4>
+      <h3>Please review below booking details:</h3>
       <p>Name: {{booking.name}}</p>
       <p>Email: {{booking.email}}</p>
       <p>Phone: {{booking.phone}}</p>
@@ -24,11 +23,12 @@
       <p>Party Size: {{booking.party_size}}</p>
       <p>We look forward to serve you!</p>
     </div>
-    <a href="{% url 'edit_booking' booking.id %}">Edit Booking</a>
-    <form method="POST" action="{% url 'delete_booking' booking.id %}">
-      {% csrf_token %}
-      <button type="submit">Delete Booking</button>
-    </form>
+    <div class="edit-buttons">
+      <a href="{% url 'edit_booking' booking.id %}">Edit Booking</a>
+      <form method="POST" action="{% url 'delete_booking' booking.id %}">
+        <button type="submit">Delete Booking</button>
+      </form>
+    </div>
   </section>
 </main>
 {% endblock %}

@@ -14,6 +14,7 @@ main {
   text-align: center;
   max-width: 350px;
   border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
 #confirmation-section h2 {
@@ -24,16 +25,8 @@ main {
 }
 
 #confirmation-section h3 {
-  background-color: rgb(222, 191, 151);
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 8px;
-}
-
-#confirmation-section h4 {
-  background-color: rgb(222, 191, 151);
-  padding: 1rem;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
 }
 
@@ -52,14 +45,35 @@ main {
 #confirmation-section a {
   background-color: rgb(221, 183, 133);
   padding: 1rem;
+  margin: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+  font-size: 1.09rem;
+}
+
+#confirmation-section button {
+  background-color: rgb(221, 183, 133);
+  padding: 1rem;
   margin: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  font-weight: 450;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   #confirmation-section {
     min-width: 600px;
     max-width: 600px;
+  }
+
+  #confirmation-section .edit-buttons {
+    display: flex;
+    justify-content: center;
   }
 }
