@@ -93,6 +93,13 @@
   border: none;
 }
 
+/* Error messages */
+.errorlist {
+  color: red;
+  list-style-type: none;
+  font-weight: bold;
+}
+
 /* Contact section */
 #contact-section {
   padding: 2rem;

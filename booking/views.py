@@ -16,9 +16,10 @@ def home(request):
     else:
       print("Form is invalid")
       print(form.errors)
+      return render(request, "home.html", {"form":form})
   else:
     form = BookingForm()
-    return render(request, "home.html", {"form":form})
+  return render(request, "home.html", {"form":form})
 
 def booking_confirmation(request):
   booking_id = request.session.get("booking_id")
@@ -37,6 +38,9 @@ def edit_booking(request, booking_id):
       booking = form.save()
       request.session["booking_id"] = booking.id
       return redirect('booking_confirmation')
+    else:
+      print("Form is invalid")
+      print(form.errors)
   else:
     form = BookingForm(instance=booking)
   return render(request, "edit_booking.html", {"form":form, "booking":booking})
