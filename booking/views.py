@@ -27,7 +27,7 @@ def booking_confirmation(request):
         return redirect("home")
   
   booking = Bookings.objects.get(id=booking_id)
-  return render(request, "booking-conf.html", {"booking":booking})
+  return render(request, "booking_conf.html", {"booking":booking})
 
 def edit_booking(request, booking_id):
   booking = get_object_or_404(Bookings, id=booking_id)
@@ -39,7 +39,7 @@ def edit_booking(request, booking_id):
       return redirect('booking_confirmation')
   else:
     form = BookingForm(instance=booking)
-  return render(request, "edit-booking.html", {"form":form, "booking":booking})
+  return render(request, "edit_booking.html", {"form":form, "booking":booking})
   
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Bookings, id=booking_id)
@@ -47,7 +47,7 @@ def delete_booking(request, booking_id):
         booking.delete()
         return redirect("delete_confirmation")
     else:
-       return render(request, "booking-conf.html", {"booking":booking})
+       return render(request, "booking_conf.html", {"booking":booking})
   
 def delete_confirmation(request):
-    return render(request, "delete-conf.html", {})
+    return render(request, "delete_conf.html", {})

@@ -25,7 +25,10 @@
       <p>We look forward to serve you!</p>
     </div>
     <a href="{% url 'edit_booking' booking.id %}">Edit Booking</a>
-    <form method="POST" action="{% url 'delete_booking' booking.id %}"></form>
+    <form method="POST" action="{% url 'delete_booking' booking.id %}">
+      {% csrf_token %}
+      <button type="submit">Delete Booking</button>
+    </form>
   </section>
 </main>
 {% endblock %}
