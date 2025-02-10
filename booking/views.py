@@ -55,3 +55,7 @@ def delete_booking(request, booking_id):
   
 def delete_confirmation(request):
     return render(request, "delete_conf.html", {})
+
+def find_booking(request):
+  return render(request, "find_booking.html", {})
+    
