@@ -43,6 +43,11 @@ nav {
 
 h1 i {
   margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+h1 {
+  cursor: pointer;
 }
 
 /* Hamburger Menu */
