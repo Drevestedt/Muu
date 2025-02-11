@@ -68,11 +68,6 @@ h1 {
   border-radius: 8px;
 }
 
-.menu.active {
-  display: flex;
-  transform: translateY(0);
-}
-
 .menu-icon {
   font-size: 1.7rem;
   cursor: pointer;

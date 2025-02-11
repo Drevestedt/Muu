@@ -7,18 +7,26 @@
 {% endblock %}
 
 <!-- Title -->
-{% block title %} Find Booking {% endblock %}
+{% block title %} Find Booking - Meat Hook {% endblock %}
 
 <!-- Main -->
 {% block main %}
 <main>
   <section id="find-booking-section">
     <h2>Find Your Booking</h2>
-    <form id="find-booking-form">
+    <form
+      id="find-booking-form"
+      method="POST"
+      action="{% url 'find_booking' %}"
+    >
+      {% csrf_token %}
       <label for="email">Email Address:</label>
       <input type="email" id="email" name="email" required />
       <button type="submit">Find Booking</button>
     </form>
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
   </section>
 </main>
 {% endblock %}

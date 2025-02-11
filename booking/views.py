@@ -21,7 +21,7 @@ def home(request):
     form = BookingForm()
   return render(request, "home.html", {"form":form})
 
-def booking_confirmation(request):
+def booking_confirmation(request, booking_id):
   booking_id = request.session.get("booking_id")
   print("This is the booking id:", booking_id)
   if not booking_id:
@@ -57,5 +57,12 @@ def delete_confirmation(request):
     return render(request, "delete_conf.html", {})
 
 def find_booking(request):
-  return render(request, "find_booking.html", {})
-    
+  if request.method == "POST":
+    email = request.POST.get("email")
+    try:
+      booking = Bookings.objects.get(email=email)
+      return redirect("booking_confirmation", booking_id=booking.id)
+    except Bookings.DoesNotExist:
+      return render(request, "find_booking.html", {"error":"Booking not found"})
+  else:
+     return render(request, "find_booking.html", {})
