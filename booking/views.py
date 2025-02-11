@@ -63,6 +63,6 @@ def find_booking(request):
       booking = Bookings.objects.get(email=email)
       return redirect("booking_confirmation", booking_id=booking.id)
     except Bookings.DoesNotExist:
-      return render(request, "find_booking.html", {"error":"Booking not found"})
+      return render(request, "find_booking.html", {"error":"No booking found with that email address"})
   else:
      return render(request, "find_booking.html", {})

@@ -46,6 +46,13 @@ main {
   font-size: 1rem;
 }
 
+/* Error messages */
+.error {
+  color: red;
+  list-style-type: none;
+  font-weight: bold;
+}
+
 #find-booking-form button {
   background-color: rgb(221, 183, 133);
   padding: 1rem;

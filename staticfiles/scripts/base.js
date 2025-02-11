@@ -1,8 +1,3 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  menu.classList.toggle("active");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.querySelector(".menu-icon");
   const menu = document.querySelector(".menu");

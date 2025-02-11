@@ -41,6 +41,11 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-logo {
+  text-decoration: none;
+  color: black;
+}
+
 h1 i {
   margin-left: 0.5rem;
   cursor: pointer;
@@ -66,6 +71,11 @@ h1 {
   z-index: 1000;
   padding: 1rem 0rem 1rem 0;
   border-radius: 8px;
+}
+
+.menu.active {
+  transform: translateY(0);
+  display: flex;
 }
 
 .menu-icon {
