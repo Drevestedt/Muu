@@ -1,3 +1,9 @@
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 /* Edit booking */
 #edit-bookings {
   margin-bottom: 2rem;
