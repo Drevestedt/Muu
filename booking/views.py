@@ -12,7 +12,7 @@ def home(request):
     if form.is_valid():
       booking = form.save()
       request.session["booking_id"] = booking.id
-      return redirect("booking_confirmation")
+      return redirect("booking_confirmation", booking_id=booking.id)
     else:
       print("Form is invalid")
       print(form.errors)
@@ -25,7 +25,7 @@ def booking_confirmation(request, booking_id):
   booking_id = request.session.get("booking_id")
   print("This is the booking id:", booking_id)
   if not booking_id:
-        return redirect("home")
+    return redirect("home")
   
   booking = Bookings.objects.get(id=booking_id)
   return render(request, "booking_conf.html", {"booking":booking})
@@ -37,13 +37,13 @@ def edit_booking(request, booking_id):
     if form.is_valid():
       booking = form.save()
       request.session["booking_id"] = booking.id
-      return redirect('booking_confirmation')
+      return redirect('booking_confirmation', booking_id=booking.id)
     else:
       print("Form is invalid")
       print(form.errors)
   else:
     form = BookingForm(instance=booking)
-  return render(request, "edit_booking.html", {"form":form, "booking":booking})
+    return render(request, "edit_booking.html", {"form":form, "booking":booking})
   
 def delete_booking(request, booking_id):
     booking = get_object_or_404(Bookings, id=booking_id)

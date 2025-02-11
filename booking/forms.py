@@ -13,7 +13,8 @@ class BookingForm(forms.ModelForm):
 
     def clean_email(self):
         email = self.cleaned_data.get("email")
-        if Bookings.objects.filter(email=email).exists():
-            raise forms.ValidationError("A booking already exists for this email.")
+        if self.instance.pk is None:
+            if Bookings.objects.filter(email=email).exists():
+                raise forms.ValidationError("A booking already exists for this email.")
         return email
     
