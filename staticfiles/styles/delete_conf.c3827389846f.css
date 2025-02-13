@@ -4,7 +4,7 @@ main {
   justify-content: center;
 }
 
-section {
+#delete-conf-section {
   padding: 2rem;
   background-color: #645a55;
   margin: 2rem 1rem 0rem 1rem;
@@ -13,7 +13,7 @@ section {
   align-self: flex-start;
 }
 
-section h2 {
+#delete-conf-section h2 {
   text-align: center;
   background-color: rgb(222, 191, 151);
   padding: 1rem;
