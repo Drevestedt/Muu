@@ -1,21 +1,24 @@
 main {
-  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-#delete-conf-section {
+section {
   padding: 2rem;
   background-color: #645a55;
   margin: 2rem 1rem 0rem 1rem;
   border-radius: 8px;
-  max-width: 500px;
 }
 
-#delete-conf-section h2 {
+section h2 {
   text-align: center;
   background-color: rgb(222, 191, 151);
   padding: 1rem;
   border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 500px;
+  }
 }
