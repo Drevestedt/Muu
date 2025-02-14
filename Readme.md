@@ -32,7 +32,7 @@ This project is built using **Django** for the backend and **HTML, CSS, and Java
 
 - **Python (Django)** – Framework for handling server-side logic.
 - **Django Forms** – Manage booking form submissions.
-- **Django Models** – Store reservation and menu data in a database.
+- **Django Models** – Store reservation data in a database.
 
 ### **Database**
 
