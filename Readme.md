@@ -50,6 +50,8 @@ This project is built using **Django** for the backend and **HTML, CSS, and Java
 
 ### 🐛 Bug Reporting & Feedback
 
+- There are some minor known UI/Layout bugs, but since this project is Backend focused those bugs will not be addressed right now.
+
 #### If you find any issues, feel free to:
 
 - Open an issue on GitHub.
