@@ -5,7 +5,7 @@
 A full-stack **Restaurant Website** where customers can:
 
 - View the menu
-- Make table reservations
+- Make, edit, and delete table reservations
 - View a contact section for location and contact info
 
 This project is built using **Django** for the backend and **HTML, CSS, and JavaScript** for the frontend.
