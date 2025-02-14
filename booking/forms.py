@@ -16,5 +16,5 @@ class BookingForm(forms.ModelForm):
         if self.instance.pk is None:
             if Bookings.objects.filter(email=email).exists():
                 raise forms.ValidationError("A booking already exists for this email.")
-        return email 
+        return email
     

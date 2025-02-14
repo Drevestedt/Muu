@@ -44,7 +44,7 @@
     <div id="bookings">
       <section id="booking-section">
         <h2>Book a Table</h2>
-        <form method="POST" action="{% url 'home' %}">
+        <form id="booking-form" method="POST" action="{% url 'home' %}">
           {% csrf_token %} {{form}}
           <button type="submit" , name="book">Book Now</button>
         </form>
@@ -66,3 +66,6 @@
   </main>
 </div>
 {% endblock %}
+
+<!-- Scripts -->
+<script src="/static/scripts/home.js"></script>
